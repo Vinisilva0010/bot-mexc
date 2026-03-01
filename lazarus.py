@@ -6,13 +6,15 @@ import json
 
 from datetime import datetime
 
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
 
 # --- CONFIGURAÇÕES DO SNIPER (MODO ELITE V1.0) ---
 
-TELEGRAM_TOKEN = ""      # <--- COLOQUE SEU TOKEN
-
-TELEGRAM_CHAT_ID = ""  # <--- COLOQUE SEU ID
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
 
 
